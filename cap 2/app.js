@@ -32,5 +32,46 @@ resultado = numero1 / numero2
 // Modulo
 resultado = numero1 % numero2
 
+//pi
+resultado = Math.PI;
+
+//redondeo
+resultado = Math.round(2.5);
+    //ceil
+resultado = Math.ceil(2.1);     //redondea hacia arriba
+
+resultado = Math.floor(2.8);    //redondea hacia abajo
+
+//Raiz Cuadrada
+resultado = Math.sqrt(144);
+
+//absoluto
+resultado = Math.abs(numero5);
+
+//potencia
+resultado = Math.pow(8,3);
+
+//numero minimo
+resultado = Math.min(3,5,6,1,7,8)
+
+//numero maximo
+resultado = Math.max(3,5,6,1,7,8)
+
+//aleatorio
+resultado = Math.random()
+
+resultado = 10 + 20 -5
+resultado = 10 + 20 * 5
+resultado = (10 + 20) * 5
+
+
+
+//porcentaje
+resultado = (10 + 20 + 20 + 10 + 40) * .20 ;
 
 console.log(resultado)
+
+let puntaje = 10;
+
+
+console.log(puntaje)
