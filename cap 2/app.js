@@ -1,35 +1,33 @@
-//var let const
+//String - cadenas de texto
 
-// let nombre = 'Juan';
-// let producto = 'libro';
-//console.log(producto);
+nombre = 'juan pablo';
+nombre = "juan pablo"
+//nombre = 'juan pablo"  error 
+mensaje = 'y entonces dije "Buen curso"'; //esta ok
+mensaje = "y entonces dije 'Buen curso!!'"; //esta ok
+mensaje = ' y entonces dije \'Buen curso!!\''; //esta ok
 
-// let nombre
-// nombre = 'Juan'
-// console.log(nombre);
+// mensaje = 20     // numero
+// mensaje = '20'   // string
 
 
-// let nombre = 'Juan',
-//     producto = 'libro';
+//concatenar javascript
 
+mensaje = 'JAVA' + 'SCRIPT'
+console.log(mensaje)
+
+//Uniendo variables en una sola
+
+let aprendiendo = 'Aprendiendo',
+    tecnologia = 'javascript'
+
+    //console.log(aprendiendo +" " +tecnologia)
+console.log(`${aprendiendo} ${tecnologia}`)  //template literals
+
+
+
+
+// let producto = 'Libro' 
+// producto = 'libro 2'
 // console.log(producto);
-// console.log(nombre);
 
-
-// let producto = 'libro';
-// producto = 'libro1';
-// console.log(producto);
-
-// const producto;
-// producto = 'Libro' //muestra error por que las constantes siempre se deben inicializar
-// console.log(producto);
-
-// const producto= 'Libro'
-// console.log(producto);
-
-const producto= 'Libro'
-producto = 'Libro2' // saldra que no se puede reescribir una constante
-console.log(producto);
-
-//const se utiliza cuando sabemos que el valor no va a cambiar y ya se tiene el valor de arranque
-//let cuando sabemos que la variable va a cambiar en el futuro o se puede inicializar vacia y luego asignarle un valor
