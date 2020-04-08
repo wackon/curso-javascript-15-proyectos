@@ -1,37 +1,36 @@
+//Numeros en javascript
 
-nombre = 'juan pablo';
-nombre = "juan pablo"
-//nombre = 'juan pablo"  error 
-
-mensaje = ' y entonces dije \'Buen curso!!\''; //esta ok
-
-
-//concatenar javascript
-
-mensaje = 'JAVA' + 'SCRIPT'
-
-//uniendo variables en unsa sola
-mensaje = 'Aprendiendo javascript. CSS, HTML, paras ser Frontend'
+// const numero1 = 30
+// const numero2 = 20
+// const numero3 = 20.20
+// const numero4 = .1020
+// const numero5 = -3
 
 
-console.log(mensaje.substring (0,11))   //Toma desde la posicion 0 del string hasta el caracter numero 11 del mismo
-
-console.log(mensaje.substring (3,21))   //Toma desde la posicion 3 del string hasta el caracter numero 21 del mismo
-
-console.log(mensaje.slice(-3))   //Toma desde la ultima posicion del string hasta el caracter numero -3 contando de atras hacia adelante
-
-console.log(mensaje.slice(-30))   //Toma desde la ultima posicion del string hasta el caracter numero -3 contando de atras hacia adelante
-
-console.log(mensaje.slice(0,11))   //cumple la misma funcion que substring
-
-console.log( mensaje.split(' '))    //serpara el codigo en porciones por espacio
+//tambien se puede definir asi:
+const numero1 = 30,
+     numero2 = 20,
+     numero3 = 20.20,
+     numero4 = .1020,
+     numero5 = -3;
 
 
-console.log( mensaje.split(','))   //serpara el codigo en porciones por comas
+//     console.log(numero1)
+  
+let resultado;
+//suma
+resultado = numero1 + numero2;
+//resta
+resultado = numero1 - numero2;
+//multiplicacion
+resultado = numero1 * numero2;
 
-console.log(mensaje.replace('CSS','PHP'))   //remplaza en el string los caracteres CSS por PHP
+resultado = numero1 * 2;
 
-console.log(mensaje.includes('CSS'))    //comprueba si el string tiene en su contenido CSS - devuelve true o false
+//divisiones
+resultado = numero1 / numero2
+// Modulo
+resultado = numero1 % numero2
 
-let tecnologia = 'javascript' + ' ';
-console.log(tecnologia.repeat(10))      //repite un valor en 10 oportunidades
+
+console.log(resultado)
