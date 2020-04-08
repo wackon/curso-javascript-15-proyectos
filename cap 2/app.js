@@ -6,39 +6,32 @@ nombre = "juan pablo"
 mensaje = ' y entonces dije \'Buen curso!!\''; //esta ok
 
 
-
 //concatenar javascript
 
 mensaje = 'JAVA' + 'SCRIPT'
-// console.log(mensaje)
 
-//Uniendo variables en una sola
-
-
-// -------------------------------------------
-// let aprendiendo = 'Aprendiendo',
-//     tecnologia = 'javascript'
-
-
-    //console.log(tecnologia.length) 
-
-
-//console.log(tecnologia.concat(' ', 'Es genial' ))  
-
-// console.log(tecnologia.toUpperCase());
-
-
-//console.log(tecnologia.toLocaleLowerCase());
-
-// let numero = 300
-// console.log(numero.toLocaleLowerCase()); //sale error ya que el 300 no es un string
-
-
-// let numero = '300'
-// console.log(numero.toLocaleLowerCase()); 
-
+//uniendo variables en unsa sola
 mensaje = 'Aprendiendo javascript. CSS, HTML, paras ser Frontend'
 
-console.log(mensaje.indexOf('javascript'))  // cuensta los caracteres desde donde empieza el mensaje e indica que en la posicion 12 esta el texto javascript
 
-console.log(mensaje.indexOf('PHP'))     //si en consola te sale -1 indica que el texto buscado no se encuentra en el string
+console.log(mensaje.substring (0,11))   //Toma desde la posicion 0 del string hasta el caracter numero 11 del mismo
+
+console.log(mensaje.substring (3,21))   //Toma desde la posicion 3 del string hasta el caracter numero 21 del mismo
+
+console.log(mensaje.slice(-3))   //Toma desde la ultima posicion del string hasta el caracter numero -3 contando de atras hacia adelante
+
+console.log(mensaje.slice(-30))   //Toma desde la ultima posicion del string hasta el caracter numero -3 contando de atras hacia adelante
+
+console.log(mensaje.slice(0,11))   //cumple la misma funcion que substring
+
+console.log( mensaje.split(' '))    //serpara el codigo en porciones por espacio
+
+
+console.log( mensaje.split(','))   //serpara el codigo en porciones por comas
+
+console.log(mensaje.replace('CSS','PHP'))   //remplaza en el string los caracteres CSS por PHP
+
+console.log(mensaje.includes('CSS'))    //comprueba si el string tiene en su contenido CSS - devuelve true o false
+
+let tecnologia = 'javascript' + ' ';
+console.log(tecnologia.repeat(10))      //repite un valor en 10 oportunidades
