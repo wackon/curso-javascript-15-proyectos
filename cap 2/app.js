@@ -1,30 +1,35 @@
 //var let const
 
-// var nombre = 'Juan'
-// var nombre = 'Jhon';
+// let nombre = 'Juan';
+// let producto = 'libro';
+//console.log(producto);
 
-// var carrito = 'Libro',
-//     carrito1 = 'Libro2';
-
-// console.log(carrito);
-// console.log(carrito1);
-
-
-// var dias99 = 99;
-// console.log(dias99);
-
-//no se pueden numeros despues de una var, let o const ejemm var 99dias =99.
+// let nombre
+// nombre = 'Juan'
+// console.log(nombre);
 
 
-// var *hola = "hola";
-// console.log(*hola);
+// let nombre = 'Juan',
+//     producto = 'libro';
 
-//no se pueden caracteres especiales despues de una var, let o const ejemm var *dias =99
+// console.log(producto);
+// console.log(nombre);
 
-// var nombre = 'Juan';
 
-// Mas de una palabra
+// let producto = 'libro';
+// producto = 'libro1';
+// console.log(producto);
 
-var primerNombre = 'Juan'; //camelcase -- recomendada
-var primer_nombre = 'Juan' //underscode
-var PrimerNombre = 'Juan' // pascal case
+// const producto;
+// producto = 'Libro' //muestra error por que las constantes siempre se deben inicializar
+// console.log(producto);
+
+// const producto= 'Libro'
+// console.log(producto);
+
+const producto= 'Libro'
+producto = 'Libro2' // saldra que no se puede reescribir una constante
+console.log(producto);
+
+//const se utiliza cuando sabemos que el valor no va a cambiar y ya se tiene el valor de arranque
+//let cuando sabemos que la variable va a cambiar en el futuro o se puede inicializar vacia y luego asignarle un valor
