@@ -3,25 +3,40 @@ const numero1 = '50',
       numero3 = 'tres';
 
 
-// console.log( 1 + 2 );
+// console.log( numero1 + numero2 ) 
+// console.log( parseInt(numero1) + numero2) 
+// console.log( Number(numero1) + numero2)
+// console.log(numero1 - numero2)
+// console.log( typeof Number (numero3));  
 
-// console.log('java' + 'Script')
-
-// console.log( numero1 + numero2 );
-
-console.log( typeof Number(numero1)) //Number convierte de string a numero 
-
-console.log( parseInt(numero1) + numero2) //parseInt  convierte a String
-
-
-console.log( Number(numero1) + numero2)
-
-console.log(numero1 - numero2)
-
-console.log(typeof parseInt(numero1))
+let dato;
+dato = Number ( "20");      //20
+dato = Number ('20.2323565');       //20.2323565
+dato = Number (true);       //1
+dato = Number (false);      //0
+dato = Number (null)        //0
+dato = Number (undefined)       //NAN
+dato = Number('hola mundo');
+dato = Number ([1,2,3,4,5])
 
 
-console.log( typeof Number (numero3));  //el typeof dice que e un numero pero cuando le quitamos el typeof nos da como resultado NAN ( No es un numero )
+//parseFloat  y  parseint
 
-console.log( Number (numero3));     //el typeof dice que e un numero pero cuando le quitamos el typeof nos da como resultado NAN ( No es un numero )
+dato = parseInt('100');
+dato = parseFloat ( '100');
+dato = parseFloat ( '100.203')
+dato = parseInt ( '100.203')
 
+console.log(dato);
+
+//toFixed
+
+dato = 1236745.35555565
+
+console.log(dato.toFixed(3))        //esablece 3 decimales
+console.log(typeof dato);
+
+
+dato = '6456556';
+//console.log(dato.toFixed())    //mostrará un erro ya que dato no es un string
+console.log(parseInt(dato).toFixed(2))
