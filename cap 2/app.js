@@ -1,49 +1,46 @@
-// let valor;
+const numero1 = 20;
+const numero2 = 50;
+const numero3 = '20';
 
-// valor = 'Cadena de texto';
-// valor = 20;
-// valor = true;
-// valor = undefined;
-// valor = {
-//     nombre:'juan'}
+// console.log(numero1 > numero2)
 
-// console.log(valor)
-// ------------------------Primitivos---------------
-let valor;
+// console.log(numero1 < numero2)
 
-valor = 'Juan';
-valor = 20;
-valor = 20.20
-valor = "20";
+//comparar igual
 
-//booleanos
+console.log(20 == '20' )  //revisa solo el valor
 
-valor = true
-valor = false
+console.log(20 === '20' )  //revisa valor y tipo de dato
 
-//null
-valor = null
+console.log(numero1 === numero3 );
 
-//symbols
-valor = Symbol('simbolo')
+//Diferentes
 
+console.log(2 != 3);
 
-////// ----------------------De referencia o tipo objeto----------------
-//arreglo = objeto
-valor = [2,3,4,5,6];
+console.log('hola' == ' hola');
 
-
-//Objeto
-valor = {
-    nombre : 'Juan',
-    profesion :'Desarrollador web'
-
-}
-
-//fecha
-valor = new Date();
+console.log('a' > 'b')
 
 
 
+console.log('z' > 'A')
 
-console.log(typeof valor)
+
+
+//ABCDEFGH........abcdefgh
+
+
+
+console.log( null == undefined)
+
+console.log( null === undefined)
+
+
+
+let nombre = 'juan'
+let nombre2 = 'Pedro'
+
+//console.log(nombre = nombre2)
+
+console.log(nombre === nombre2)
