@@ -1,42 +1,78 @@
-const numero1 = '50',
-      numero2 = 10,
-      numero3 = 'tres';
+// const cp = 'Juan';
+// console.log(cp.length);
+
+let cp;
+
+//------------convirtiendo string a numero-------
+// cp = 90210;
+// cp = String (cp)
+// console.log(cp.length);
+// console.log(typeof cp)
 
 
-// console.log( numero1 + numero2 ) 
-// console.log( parseInt(numero1) + numero2) 
-// console.log( Number(numero1) + numero2)
-// console.log(numero1 - numero2)
-// console.log( typeof Number (numero3));  
 
-let dato;
-dato = Number ( "20");      //20
-dato = Number ('20.2323565');       //20.2323565
-dato = Number (true);       //1
-dato = Number (false);      //0
-dato = Number (null)        //0
-dato = Number (undefined)       //NAN
-dato = Number('hola mundo');
-dato = Number ([1,2,3,4,5])
+// let dato;
+// dato = '4'+4;
+// console.log(dato.length);     //muestra la longitud de 2 caracteres 2
 
 
-//parseFloat  y  parseint
+// dato = true
+// dato = false
 
-dato = parseInt('100');
-dato = parseFloat ( '100');
-dato = parseFloat ( '100.203')
-dato = parseInt ( '100.203')
+// console.log(dato)
+// console.log(dato.length )
+// console.log(typeof dato)
 
-console.log(dato);
+// ------------de arreglo a String
 
-//toFixed
+// dato = true
+// dato = false
 
-dato = 1236745.35555565
+// dato = String([1,2,3])
 
-console.log(dato.toFixed(3))        //esablece 3 decimales
-console.log(typeof dato);
+// console.log(dato)
+// console.log(dato.length )
+// console.log(typeof dato)
 
 
-dato = '6456556';
-//console.log(dato.toFixed())    //mostrará un erro ya que dato no es un string
-console.log(parseInt(dato).toFixed(2))
+///------------validar el numero de elementos sin convertir a string
+
+// dato = true
+// dato = false
+
+// dato = String([1,2,3])
+
+// console.log(dato)
+// console.log(dato.length )
+// console.log(typeof dato)
+
+//_________Uso de toString__________________
+
+
+
+dato = 20;
+
+dato = dato.toString();
+console.log(dato)
+console.log(dato.length )
+console.log(typeof dato)
+
+
+dato = true;
+dato = dato.toString();
+
+console.log(dato)
+console.log(dato.length )
+console.log(typeof dato)
+
+
+dato = ([1,2,3,4])
+dato = dato.toString();
+
+
+console.log(dato)
+console.log(dato.length )
+console.log(typeof dato)
+
+dato = null         //marca error 
+dato = undefined    //marca error
