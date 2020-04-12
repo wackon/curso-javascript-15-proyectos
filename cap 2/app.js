@@ -1,78 +1,47 @@
-// const cp = 'Juan';
-// console.log(cp.length);
-
-let cp;
-
-//------------convirtiendo string a numero-------
-// cp = 90210;
-// cp = String (cp)
-// console.log(cp.length);
-// console.log(typeof cp)
 
 
 
-// let dato;
-// dato = '4'+4;
-// console.log(dato.length);     //muestra la longitud de 2 caracteres 2
+
+const producto1 = 'pizza',
+      precio1 = 30,
+      producto2 = 'hamburguesa',
+      precio2 = 40
+
+      //----------------Forma vieja ----------------------------
+
+//       let html;
+
+//       html = '<ul>'+
+//              '<li>Orden :' + producto1 + '</li>' +
+//              '<li>Precio :' + precio1 + '</li>' + 
+//              '<li>Orden :' + producto2 + '</li>' +
+//              '<li>Precio :' + precio2 + '</li>' + 
+//              '<li>Total:' + (precio1 + precio2) + '</li>' + 
+
+//              '</ul>';
+
+//   document.getElementById('app').innerHTML = html;
 
 
-// dato = true
-// dato = false
+//--------------------Forma nueva con templates literals---------------------
 
-// console.log(dato)
-// console.log(dato.length )
-// console.log(typeof dato)
+let html;
 
-// ------------de arreglo a String
+html = `
+    <ul> 
+        <li>Orden : ${producto1} </li>
+        <li>Precio : ${precio1} </li>
+        <li>Orden: ${producto2} </li>
+        <li>Precio : ${precio2} </li>
+        <li>Precio : ${total (precio1,precio2)} </li>
+        
+    </ul>`;
 
-// dato = true
-// dato = false
+    function total (precio1,precio2){
+        return (precio1+precio2)
+    }
 
-// dato = String([1,2,3])
-
-// console.log(dato)
-// console.log(dato.length )
-// console.log(typeof dato)
-
-
-///------------validar el numero de elementos sin convertir a string
-
-// dato = true
-// dato = false
-
-// dato = String([1,2,3])
-
-// console.log(dato)
-// console.log(dato.length )
-// console.log(typeof dato)
-
-//_________Uso de toString__________________
+document.getElementById('app').innerHTML = html;
 
 
-
-dato = 20;
-
-dato = dato.toString();
-console.log(dato)
-console.log(dato.length )
-console.log(typeof dato)
-
-
-dato = true;
-dato = dato.toString();
-
-console.log(dato)
-console.log(dato.length )
-console.log(typeof dato)
-
-
-dato = ([1,2,3,4])
-dato = dato.toString();
-
-
-console.log(dato)
-console.log(dato.length )
-console.log(typeof dato)
-
-dato = null         //marca error 
-dato = undefined    //marca error
+  
