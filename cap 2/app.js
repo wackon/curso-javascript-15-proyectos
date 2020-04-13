@@ -1,24 +1,22 @@
-//ELse if
+//Operador  or   ||
 
-let hora = 25
+let efectivo = 300,
+    credito = 300,
+    totalCarrito = 500;
+    disponible = (efectivo + credito)
 
-if(hora > 0 && hora <= 10){
-    console.log('Buenos Días!')
-}else if(hora > 10 && hora <=18 ){
-    console.log('Buenas Tardes!')
-}else if (hora > 18 && hora <=24){
-    console.log('Buenas Noches')
+if(totalCarrito < efectivo || totalCarrito < credito || totalCarrito < disponible){
+    console.log('puedo pagar')
 }else{
-    console.log('Hora no valida')
+    console.log('No puedo pagar')
 }
 
 
+//ternario  ---es un if en una sola linea
 
-let puntaje = 100;
+const logueado = true;
+console.log (logueado === true ? 'si se logueo' : 'No se logueo')
 
-if (puntaje < 150){
-    console.log('puntaje < 150')
-}else if (puntaje < 200){
-    console.log('puntaje < 200')
-}
 
+// ? = entonces
+// : = else
