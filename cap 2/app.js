@@ -1,44 +1,37 @@
-//Fechas
+/// if , else ,else if ,
 
-//En javascript existe un objeto llamado Date
+// const edad = 18;
 
-
-//Fecha en especifico Mes, Dia , Año
-let navidad2017 = new Date('12-25-2017')
-console.log(navidad2017)
-
-
-// const diaHoy = new Date();
-// console.log(diaHoy)
+// if (edad != 18){
+//     console.log('Si puedes entrar al sitio')    
+// }else{
+//     console.log('No puedes entrar al sitio')
+// }
 
 
-const diaHoy = new Date();
+//--------------------------------------------------------------------
 
-let valor;
-valor = diaHoy.getMonth();      //Muestra el mes recordando que enero es el mes 0 cero en javascript
-console.log(valor)
+//comprobar que una variable tiene un valor
 
-valor = diaHoy.getDate();       //Muestra el día
-console.log(valor)
+// let puntaje = 1000
+//     puntaje = 0
+let puntaje;
 
-valor = diaHoy.getFullYear();           //Muestra el año
-console.log(valor)
+if (typeof puntaje != 'undefined'){
+    console.log(`el puntaje fue de ${puntaje}`)
+    }else{
+        console.log(`No hay puntaje`)
+    }
 
-valor = diaHoy.getHours();          //Obtiene la hora en transcurso
-console.log(valor)
+    console.log(puntaje)
 
-valor = diaHoy.getMinutes();        //Obtiene los minutos en transcurso
-console.log(valor)
+//-_----------------------------------------------------------------------
 
-valor = diaHoy.getSeconds();        //Obtiene los segundos en transcurso
-console.log(valor)
+let efectivo = 500
 
-valor = diaHoy.getTime();        //Obtiene los milisegundos desde 1970
-console.log(valor)
+let totalCarrito = 300
 
-
-valor = diaHoy.getFullYear();           //Muestra el año en transcurso
-console.log(valor)
-valor = diaHoy.setFullYear(2030)        //editamos el año a 2030
-valor = diaHoy.getFullYear();
-console.log(valor)
+if (efectivo > totalCarrito)
+    console.log('Pago Correcto')
+else
+    console.log('Fondos insuficientes')
