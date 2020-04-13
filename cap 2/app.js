@@ -1,47 +1,39 @@
+// //Crear un arreglo 
+ 
+// const numeros = [10,20,30,40,50,60];
+// console.log(numeros);
+
+// //Arreglo de Strings (metodo alternativo)
+
+const meses = new Array('Enero', 'Febrero', 'Marzo', 'Abril');
+console.log(meses)
+
+// //Arreglo mezclado
+
+// const mezclado = ['Hola', 20, true, null, false, undefined ]
+// console.log(mezclado);
+
+// const mezclado1 = ['Hola', 20, true, null, false, undefined]
+// console.log(mezclado1.length);
+
+//Comprobar si es un arreglo
+
+console.log(Array.isArray(meses));
+console.log(meses)
+console.log(meses[2])
+
+// adicionamos un mes al array
+
+meses [4] = 'Mayo'
+console.log(meses.length)
+console.log(meses)
+
+// otra forma
+
+meses.push('Junio')     //añade al final del arreglo
+console.log(meses.length)
+console.log(meses)
 
 
-
-
-const producto1 = 'pizza',
-      precio1 = 30,
-      producto2 = 'hamburguesa',
-      precio2 = 40
-
-      //----------------Forma vieja ----------------------------
-
-//       let html;
-
-//       html = '<ul>'+
-//              '<li>Orden :' + producto1 + '</li>' +
-//              '<li>Precio :' + precio1 + '</li>' + 
-//              '<li>Orden :' + producto2 + '</li>' +
-//              '<li>Precio :' + precio2 + '</li>' + 
-//              '<li>Total:' + (precio1 + precio2) + '</li>' + 
-
-//              '</ul>';
-
-//   document.getElementById('app').innerHTML = html;
-
-
-//--------------------Forma nueva con templates literals---------------------
-
-let html;
-
-html = `
-    <ul> 
-        <li>Orden : ${producto1} </li>
-        <li>Precio : ${precio1} </li>
-        <li>Orden: ${producto2} </li>
-        <li>Precio : ${precio2} </li>
-        <li>Precio : ${total (precio1,precio2)} </li>
-        
-    </ul>`;
-
-    function total (precio1,precio2){
-        return (precio1+precio2)
-    }
-
-document.getElementById('app').innerHTML = html;
-
-
-  
+let nombre = 'Juan';
+console.log(Array.isArray(nombre));
