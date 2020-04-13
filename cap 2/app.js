@@ -1,56 +1,25 @@
-//crear objetos
+//Arreglo de objetos
 
-const persona = {
-    nombre: 'Miguel',
-    apellido: 'Martinez',
-    profesion:'Diseñador gráfico',
-    email: 'correo@correo.com',
-    edad: 20,
-    musica : ['Trance', 'Rock','Grunge'],
-    hogar: {
-        cuidad: 'Medellín',
-        pais: 'Polombia'
-    },
-    nacimiento : function(){
-        return new Date().getFullYear() - this.edad
-    }
+const autos = [
+    {modelo: 'Mustang', motor: 6.2 },
+    {modelo: 'Camaro', motor: 6.1 },
+    {modelo: 'Challenger', motor: 6.3 },
+    
+];
 
+console.log(autos)
+console.log(autos[0].modelo);
+
+console.log(autos.length)
+
+for (let i=0;i<autos.length;i++){
+    console.log(`${autos[i].modelo} ${autos[i].motor}`)
 }
 
-console.log(persona);
-// console.log(persona.profesion);
-// console.log(persona.edad);
-// console.log(persona.musica);
-// console.log(persona.musica[1]);
-// persona.musica.push('Alternativo');
-// console.log(persona.musica);
-// console.log(persona.hogar)
-// console.log(persona.hogar.cuidad)
-console.log(persona.nacimiento())
-
-
-
-const persona2 = {
-    nombre: 'Miguel',
-    apellido: 'Martinez',
-    profesion:'Diseñador gráfico',
-    email: 'correo@correo.com',
-    edad: 30,
-    musica : ['Trance', 'Rock','Grunge'],
-    hogar: {
-        cuidad: 'Medellín',
-        pais: 'Polombia'
-    },
-    nacimiento : function(){
-        return new Date().getFullYear() - this.edad
-    }
-
+for (let i=0;i<autos.length;i++){
+    console.log(autos[i].modelo)
 }
 
-console.log(persona2);
-console.log(persona2.nacimiento())
+autos[0].modelo = 'Audi';
 
-//otra forma para acceder a las propiedades de un objeto "NO RECOMENDABLE" --asi se accede a objetos en php
-
-// console.log(persona['nombre'])
-// console.log(persona['hogar']['pais'])
+console.log(autos)
