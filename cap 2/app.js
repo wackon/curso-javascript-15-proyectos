@@ -1,25 +1,37 @@
-//Arreglo de objetos
+//Function declaration
+/*
+function saludar(){
+    console.log('Hola Miguel')
+}
+saludar();
+*/
 
-const autos = [
-    {modelo: 'Mustang', motor: 6.2 },
-    {modelo: 'Camaro', motor: 6.1 },
-    {modelo: 'Challenger', motor: 6.3 },
-    
-];
 
-console.log(autos)
-console.log(autos[0].modelo);
+// function saludar(nombre){
+//     console.log(`Hola ${nombre}`)
+// }
+// saludar('Daniel');
+// saludar('PABLO');
+// saludar('Carolina');
+// saludar('Claudia');
 
-console.log(autos.length)
-
-for (let i=0;i<autos.length;i++){
-    console.log(`${autos[i].modelo} ${autos[i].motor}`)
+/*
+function sumar(a,b){
+    console.log( a + b )
 }
 
-for (let i=0;i<autos.length;i++){
-    console.log(autos[i].modelo)
+sumar(1,2)
+sumar(3,4)
+*/
+
+function sumar (a,b){
+    return (a + b)
 }
 
-autos[0].modelo = 'Audi';
+let suma;
+// suma = sumar(1,2)
+// suma = sumar(3,4)
+suma = sumar(5)     //sale error ya que la funcion exige 2 parametros y solo se esta enviando 1
 
-console.log(autos)
+
+console.log(suma)
