@@ -1,37 +1,24 @@
-/// if , else ,else if ,
+//ELse if
 
-// const edad = 18;
+let hora = 25
 
-// if (edad != 18){
-//     console.log('Si puedes entrar al sitio')    
-// }else{
-//     console.log('No puedes entrar al sitio')
-// }
+if(hora > 0 && hora <= 10){
+    console.log('Buenos Días!')
+}else if(hora > 10 && hora <=18 ){
+    console.log('Buenas Tardes!')
+}else if (hora > 18 && hora <=24){
+    console.log('Buenas Noches')
+}else{
+    console.log('Hora no valida')
+}
 
 
-//--------------------------------------------------------------------
 
-//comprobar que una variable tiene un valor
+let puntaje = 100;
 
-// let puntaje = 1000
-//     puntaje = 0
-let puntaje;
+if (puntaje < 150){
+    console.log('puntaje < 150')
+}else if (puntaje < 200){
+    console.log('puntaje < 200')
+}
 
-if (typeof puntaje != 'undefined'){
-    console.log(`el puntaje fue de ${puntaje}`)
-    }else{
-        console.log(`No hay puntaje`)
-    }
-
-    console.log(puntaje)
-
-//-_----------------------------------------------------------------------
-
-let efectivo = 500
-
-let totalCarrito = 300
-
-if (efectivo > totalCarrito)
-    console.log('Pago Correcto')
-else
-    console.log('Fondos insuficientes')
