@@ -67,5 +67,28 @@ console.log(meses2)
 let arreglo1 = [1,2,3],
     arreglo2 = [9,8,7];
 
-
 console.log(arreglo1.concat(arreglo2))
+
+//ordenar un arreglo alfabeticamente
+
+const frutas =['Platano', 'Manzana', 'Fresa', 'Naranja','Zanahoria']
+console.log(frutas);
+frutas.sort();
+console.log(frutas);
+
+arreglo1 = [3,9,91,92,23,45,21,56,1,100,10];
+console.log(arreglo1);
+arreglo1.sort();        //no ordena números
+console.log(arreglo1)
+
+//Arregla en modo ascendente solo con una funcion
+arreglo1.sort(function(x,y){
+    return x-y
+}) 
+console.log(arreglo1)
+
+//Arregla en modo descendente solo con una funcion
+arreglo1.sort(function(x,y){
+    return y - x
+}) 
+console.log(arreglo1)
