@@ -1,46 +1,37 @@
-//for loops
+// let  i = 0;
 
-// for (let i = 0; i <100; i ++){
-// console.log(`Numero: ${i}`)
+// while(i<10){
+       
+//     if (i == 5){
+//         console.log(`Cinco`)
+//         i++;
+//         continue;
+        
+//     }
+//      console.log(`Numero: ${i}`)
+//     i++;
 // }
 //-----------------------------------------------------
 
 /*
-for (let i = 0; i <10; i ++){
-    if(i==5)
-    {console.log('voy en el cinco')}        //imprime voy en el cinco y a continuación el número 5
-    console.log(`${i}`)
-    }
+const musica  = [`Cancion 1`, `Cancion 2`, `Cancion 3`];
 
-    */
-   // ------------------------------------------------------
-    //------imprime el voy en el cinco y luego el numero 6
- /*   
-   for (let i = 0; i <10; i ++){
-    if(i==5){
-        console.log('voy en el cinco');    
-        continue;   
-        }
-    console.log(`${i}`)
-    }
-*/
-//--------------------------------------------------------
-        //--------------cambiando el continue por el break  solo imprime hasta voy en el cinco y luego sale del for
+let i = 0;
 
-    // for (let i = 0; i <10; i ++){
-    //     if(i==5){
-    //         console.log('voy en el cinco');    
-    //         break;   
-    //         }
-    //     console.log(`${i}`)
-    //     }
+console.log(musica.length)
 
+while(i <musica.length){
+      
+       console.log(`Reproduciendo la canción: ${musica[i]}`)
+    i++;
+}*/
 
-const arregloProductos = [`Camisa`,`Boletos`,`Guitarra`,`Disco`]        
+////////------------Do while------------
 
-console.log(arregloProductos.length)
+let j = 1000;
 
-for (let i = 0 ; i < arregloProductos.length ; i ++){
-         console.log(`Tu producto  ${arregloProductos[i]} fue agregado`)
-       
-    } 
+do{
+    console.log(`Número : ${j}`)
+    j++;
+}while( j < 10);
+
