@@ -1,37 +1,50 @@
-// let  i = 0;
+//FOR EACH --RECORRER UN ARREGLO
 
-// while(i<10){
-       
-//     if (i == 5){
-//         console.log(`Cinco`)
-//         i++;
-//         continue;
-        
-//     }
-//      console.log(`Numero: ${i}`)
-//     i++;
+const pendientes = ["Tarea","Comer", "Proyecto","Aprender Javascript"];
+
+// for
+
+// for (let i = 0 ; i< pendientes.length ; i++){
+//     console.log(pendientes[i])
 // }
-//-----------------------------------------------------
+// console.log(pendientes);
 
-/*
-const musica  = [`Cancion 1`, `Cancion 2`, `Cancion 3`];
+//---FOREACH
 
-let i = 0;
+// pendientes.forEach(function (pendiente, index) {
+//     console.log(`${index} : ${pendiente}`)
+// })
+// console.log(pendientes);
 
-console.log(musica.length)
+//MAP PARA RECORRER UN ARREGLO DE OBJETOS
 
-while(i <musica.length){
-      
-       console.log(`Reproduciendo la canción: ${musica[i]}`)
-    i++;
-}*/
+const carrito = [
+    {id: 1, producto : 'libro'},
+    {id: 2, producto : 'Camisa'},
+    {id: 3, producto : 'Guitarra'},
+    {id: 4, producto : 'Disco'},
+]
 
-////////------------Do while------------
+console.log(carrito)
 
-let j = 1000;
+const nombreDelProducto = carrito.map(function (carrito){
+    return carrito.producto
+})
 
-do{
-    console.log(`Número : ${j}`)
-    j++;
-}while( j < 10);
 
+console.log(nombreDelProducto)
+
+
+const automovil = {
+    modelo : 'Camaro',
+    motor : '6.1',
+    año : 1969,
+    marca : 'Chevrolet'
+}
+
+for(let auto in automovil){
+    console.log(`${auto} : ${automovil[auto]}`)
+}
+
+
+console.log(automovil)
