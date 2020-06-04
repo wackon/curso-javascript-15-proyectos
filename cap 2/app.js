@@ -1,50 +1,104 @@
-//FOR EACH --RECORRER UN ARREGLO
+ const ciudades = ['Londres','New york', 'Madrid','Paris'];
+ const ordenes = new Set([123,231,131,102]);
+ const datos = new Map();
+ datos.set('nombre','juan');
+ datos.set('profesion','desarrollador Web');
 
-const pendientes = ["Tarea","Comer", "Proyecto","Aprender Javascript"];
+//Entries iterador
 
-// for
+// // //Entries a las ciudades
 
-// for (let i = 0 ; i< pendientes.length ; i++){
-//     console.log(pendientes[i])
+// for (let entrada of ciudades.entries()){
+//     console.log(entrada);
 // }
-// console.log(pendientes);
-
-//---FOREACH
-
-// pendientes.forEach(function (pendiente, index) {
-//     console.log(`${index} : ${pendiente}`)
-// })
-// console.log(pendientes);
-
-//MAP PARA RECORRER UN ARREGLO DE OBJETOS
-
-const carrito = [
-    {id: 1, producto : 'libro'},
-    {id: 2, producto : 'Camisa'},
-    {id: 3, producto : 'Guitarra'},
-    {id: 4, producto : 'Disco'},
-]
-
-console.log(carrito)
-
-const nombreDelProducto = carrito.map(function (carrito){
-    return carrito.producto
-})
 
 
-console.log(nombreDelProducto)
+//Entries para las ordenes
 
 
-const automovil = {
-    modelo : 'Camaro',
-    motor : '6.1',
-    año : 1969,
-    marca : 'Chevrolet'
+// for (let entradas of ordenes.entries()){
+//     console.log(entradas)
+// }
+
+//Entries para el MAP
+
+// for (let entrada of datos.entries()){
+//     console.log(entrada)
+// }
+
+//Values a las ciudades
+
+// for(let entrada of ciudades.values()){
+//     console.log(entrada)
+// }
+
+
+//Values para las ordenes
+
+
+// for (let entradas of ordenes.values()){
+//     console.log(entradas)
+// }
+
+//values para el MAP
+
+// for (let entrada of datos.values()){
+//     console.log(entrada)
+// }
+
+//keys iterator
+
+//keys a las ciudades
+
+// for(let entrada of ciudades.keys()){
+//     console.log(entrada)
+// }
+
+
+//keys para las ordenes
+
+
+// for (let entradas of ordenes.keys()){
+//     console.log(entradas)
+// }
+
+//keys para el MAP
+
+// for (let entrada of datos.keys()){
+//     console.log(entrada)
+// }
+
+//default a las ciudades
+
+// for(let entrada of ciudades){
+//     console.log(entrada)
+// }
+
+//default para las ordenes
+
+
+// for (let entradas of ordenes){
+//     console.log(entradas)
+// }
+
+//default para el MAP
+
+// for (let entrada of datos){
+//     console.log(entrada)
+// }
+
+// const mensaje= 'Aprendiendo javascript'
+
+// for(let i=0; i< mensaje.length;i++){
+//     console.log(mensaje[i])
+// }
+
+// for (let letra of mensaje){
+//     console.log(letra)
+// }
+
+const enlaces = document.getElementsByTagName('a');
+
+for (let enlace of enlaces){
+    console.log(enlace.href);
 }
-
-for(let auto in automovil){
-    console.log(`${auto} : ${automovil[auto]}`)
-}
-
-
-console.log(automovil)
