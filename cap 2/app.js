@@ -1,45 +1,37 @@
-// //prompt
+//Scopes
 
-// const nombre = prompt();
-// console.log(`Bienvenido ${nombre}`)
+var a = 'a';
+let b = 'b';
+const c = 'c';
 
-//Confirm
+//Scope
 
-// if (confirm('Eliminar?')){
-//     console.log('Eliminado')
-// }else{
-//     console.log('Nada paso!')
-// }
-
-
-// let altura,
-// anchura;
-
-// altura=window.innerHeight,
-// anchura=window.innerWidth;
-
-// console.log (altura);
-// console.log (anchura);
-
-
-
-//Ubicación
-
-let Ubicación;
-
-Ubicación = window.location.search;
-
-// window.location.href='http://twitter.com'
-
-// window.history.go(-4)
-
-//Navigator
-Ubicación =window.navigator.appName
-Ubicación =window.navigator.appVersion
-Ubicación =window.navigator.userAgent
-Ubicación =window.navigator.language
+function functionscope() {
+    var a = 'A';
+    let b = 'B';
+    const c = 'C';
+    console.log('FUNCTION :' + a,b,c);
+}   
+functionscope() 
+//scope de bloque
+if (true){
+  
+        var a = 'AA';
+        let b = 'BB';
+        const c = 'CC';
+        console.log('FUNCTION :' + a,b,c);
+}  
+//for
+for(var a =0; a<10; a++){
+    console.log(a)
+} 
 
 
- console.log(Ubicación)
 
 
+
+
+
+
+
+console.log('GLOBALES:' + a,b,c)
