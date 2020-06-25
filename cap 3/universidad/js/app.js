@@ -1,60 +1,46 @@
-//Query Selector
-
-// const encabezado = document.querySelector('#encabezado')
-
-
-// //Aplicar css
-
-
-// encabezado.style.background = '#333';
-// encabezado.style.color = '#fff';
-// encabezado.style.padding = '20px';
-// encabezado.textContent = 'Los Mejores Cursos';
-
-// console.log(encabezado)
-
-
-
-//getelementById solo funciona con id's por lo contrario querySelector funciona con classes y otros atributos para clase seria .
-
-
-// const encabezado = document.querySelector('.encabezado')
-
-
-// encabezado.style.background = '#333';
-// encabezado.style.color = '#fff';
-// encabezado.style.padding = '20px';
-// encabezado.textContent = 'Los Mejores Cursos';
-
-
-
-
-// console.log(encabezado)
-
 /*
-const encabezado = document.querySelector('.enlace')
+let enlaces = document.getElementsByClassName('enlace')[3];
+//enlaces = enlaces[3]
 
-//si existen muchos elementos con esta clase solo tomará al primero que en cuentre con esa clase.
+enlaces.style.background = '#333';
+enlaces.textContent = 'Ingenieria'
 
-//querySelectorAll mostrará todos
-
-
-
-console.log(encabezado)
+console.log(enlaces)
 */
 
-// const encabezado = document.querySelector('.card img')
+/*
+const listaEnlaces = document.querySelector('ul')
 
+console.log(listaEnlaces)
 
-// console.log(encabezado)
+*/
 
-//
+/*
+const listaEnlaces = document.querySelector('#principal').getElementsByClassName('enlace')
 
-let enlace;
+console.log(listaEnlaces)
+*/
 
-enlace = document.querySelector('#principal a:first-child')
-enlace = document.querySelector('#principal a:last-child')
-enlace = document.querySelector('#principal a:nth-child(3)')
+/*
 
+const links = document.getElementsByTagName('a')
+//ByTagName = todas las etiquetas de html
+links [18].style.color = 'red';
+links [18].textContent = 'INGENIERIA'
+console.log( links )
+*/
 
-console.log(enlace)
+/*
+const links = document.getElementsByTagName('a')
+
+let enlaces = Array.from(links);
+
+enlaces.forEach(function(enlace){
+    console.log(enlace.textContent)
+});
+
+*/
+
+const links = document.getElementsByTagName('h1')
+
+console.log(links)
