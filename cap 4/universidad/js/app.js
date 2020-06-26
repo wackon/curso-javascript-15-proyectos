@@ -1,51 +1,100 @@
-//event listeners click al buscador
+//varables
 
-/*funcion integrada
+const encabezado = document.querySelector('#encabezado');
+const enlaces = document.querySelector('.enlace');
+const boton = document.querySelector('#vaciar-carrito');
 
-alert('ensayo inicial');
-
-document.querySelector('#submit-buscador').addEventListener('click',function(event){
-    event.preventDefault();
-    alert('buscando Cursos')
-})
-
-*/
-
-//funcion creada aparte
+/////----------CLICK--------
 
 /*
+boton.addEventListener('click', obtenerevento)
 
-document.querySelector('#submit-buscador').addEventListener('click',ejecutarBoton)
-
-function ejecutarBoton(event){
-        event.preventDefault();
-      
-        console.log('Desde la función ejecutar Boton')
-    }
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}
 */
 
-
-//imprimiendo atributos del buscador
+// //--------DOBLE CLICK-----------
 
 /*
-document.querySelector('#submit-buscador').addEventListener('click',ejecutarBoton)
+boton.addEventListener('dblclick', obtenerevento)
 
-function ejecutarBoton(event){
-        event.preventDefault();
-      
-        let elemento;
-        elemento = event;
-        elemento = event.target;
-        elemento = event.target.id;
-        elemento = event.target.className;
-        elemento = event.target.innerText;
-
-
-        console.log(elemento);
-    }
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}
 */
 
-document.querySelector('#encabezado').addEventListener('click', function(e){
-   e.target.innerText = 'Nuevo encabezado'
+///////MOUSE ENTER -------//cuando pasas el mouse sobre el area especifica en este caso el vaciar carrito
+/*
 
-})
+boton.addEventListener('mouseenter', obtenerevento)
+
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}
+
+*/
+
+/////MOUSE LEAVE---Cuando se quita el mouse de vaciar carrito
+
+/*
+boton.addEventListener('mouseleave', obtenerevento)
+
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}
+*/
+
+
+//////------MOUSE OVER ---------
+/*
+
+boton.addEventListener('mouseover', obtenerevento)
+
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}
+*/
+
+
+////--------MOUSE OUT---------SIMILAR A LEAVE
+
+/*
+boton.addEventListener('mouseout', obtenerevento)
+
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}   
+*/
+
+
+////--------MOUSE DOWN---------CUANDO PRESIONA ES PARECIDO AL CLICK
+
+/*
+boton.addEventListener('mousedown', obtenerevento)
+
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}   
+*/
+
+
+////--------MOUSE UP---------CUANDO SUELTO PRESION AL CLICK SE ACCIONA
+
+/*
+boton.addEventListener('mouseup', obtenerevento)
+
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}   
+*/
+
+//----MOUSEMOVE ---CUANDO SE PASA POR ENCIMA EN ESTE CASO SOBRE EL ENCABEZADO
+encabezado.addEventListener('mousemove',obtenerevento)
+
+
+function obtenerevento(e){
+    console.log(`EVENTO: ${e.type}`)
+}
+
+
