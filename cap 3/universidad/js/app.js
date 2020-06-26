@@ -1,27 +1,26 @@
-//crear enlace
+//remplazar o modificar elementos desde javascript
 
-const enlace = document.createElement('a')
+const nuevoEncabezado = document.createElement('h2')
 
-// agregamos una clase
-enlace.className = 'enlace'
+//agregar un id
+nuevoEncabezado.id = 'encabezado';
 
-//añadir id
-enlace.id = 'nuevo-id'
+//agregar nuevo texto
+nuevoEncabezado.appendChild(document.createTextNode('Los Mejores Cursos'))
 
-//añadir atributo href
-enlace.setAttribute ('href', '#')
+console.log(nuevoEncabezado)
 
-//añadir texto
- enlace.textContent = 'Nuevo enlace'  //o´
+//Elemento anterior será remplazado
 
-/*
-enlace.appendChild(document.createTextNode('NUEVO ENLACE')); // DA EL MIMO RESULTADO QUE EL ANTERIOR CODIGO
-*/
+const anterior = document.querySelector('#encabezado')
 
+console.log(anterior)
+console.log(anterior.parentElement)//se tomará esta referencia para realizar el cambio, ya que este es el padre del elemento a remplazar
 
-//Agregarlo al HTML
+//elemento padre
+const elPadre = document.querySelector('#lista-cursos');
 
-document.querySelector('#secundaria').appendChild(enlace) //seleccionamos la ubicacion a insertar y luego con appendChild inyectamos el elemento desde javascript
+//remplazamos codigo
 
+elPadre.replaceChild(nuevoEncabezado, anterior)
 
-console.log(enlace)
